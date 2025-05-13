@@ -350,24 +350,16 @@ export default function App() {
                 Our Mission
               </h4>
               <p className="text-gray-700">
-                At Nilaan Academy, we are committed to empowering aspirants to
-                achieve success in competitive examinations through quality
-                education, personalized mentorship, and comprehensive learning
-                resources. Our mission is to transform dreams into reality by
-                providing accessible, effective, and engaging preparation
-                strategies.
-              </p>
-
-              <h4 className="text-2xl font-semibold text-[#1a1f4d] pt-2">
-                Our Journey
-              </h4>
-              <p className="text-gray-700">
-                Founded in 2018 by a team of experienced educators and civil
-                service officers, Nilaan Academy has grown from a small coaching
-                center to one of Chennai's most trusted institutes for
-                competitive exam preparation. With over 1,000+ successful
-                candidates, our proven methodology continues to help students
-                secure positions in various government departments.
+                At Nilaan academy, Our mission is to empower and guide aspirants
+                of Tamil Nadu competitive examinations, including TNPSC, through
+                high-quality, accessible, and result-oriented coaching. We are
+                committed to nurturing talent, building confidence, and
+                fostering academic excellence. By providing well-structured
+                study materials, expert mentorship, and regular assessments, we
+                aim to help students realize their full potential and achieve
+                success in government exams. Our ultimate goal is to contribute
+                to the development of a knowledgeable, responsible, and
+                service-minded generation for Tamil Nadu.
               </p>
             </div>
           </div>
@@ -384,12 +376,11 @@ export default function App() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                Expert Faculty
+                Affordable Cost
               </h4>
               <p className="text-gray-700">
-                Our teaching team comprises former civil servants, subject
-                matter experts, and experienced educators who bring practical
-                insights and exam-oriented strategies to the classroom.
+                We provide quality coaching classes "Success Made
+                Simple & Affordable."
               </p>
             </div>
 
@@ -409,12 +400,14 @@ export default function App() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                Comprehensive Resources
+                Expert Faculty
               </h4>
               <p className="text-gray-700">
-                We provide meticulously crafted study materials, regular mock
-                tests, and personalized feedback sessions to ensure our students
-                are thoroughly prepared for their examinations.
+                Our faculty team consists of highly qualified and experienced
+                educators who specialize in TNPSC and other competitive exams.
+                They simplify complex topics, provide exam-focused strategies,
+                and guide every student with dedication and care to ensure
+                success.
               </p>
             </div>
 
@@ -430,12 +423,12 @@ export default function App() {
                 </svg>
               </div>
               <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                Success Rate
+                Comprehensive Resources
               </h4>
               <p className="text-gray-700">
-                Our track record speaks for itself with over 70% of our students
-                successfully clearing preliminary exams and many securing top
-                ranks in the final selections across various departments.
+                We provide well-structured study materials, updated notes,
+                previous year question papers, and practice tests – everything
+                you need for complete TNPSC exam preparation in one place.
               </p>
             </div>
           </div>
@@ -525,7 +518,7 @@ export default function App() {
                 "Regular mentorship from experts",
                 "Flexible learning options",
                 "Affordable pricing with discounts",
-                "Proven success record",
+                "Personalized guidance, expert teaching, and affordable excellence",
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <svg
@@ -554,19 +547,20 @@ export default function App() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <blockquote className="bg-gray-100 p-6 rounded-xl text-lg italic shadow-md text-gray-700">
-            "The classes are structured, the materials are top-notch, and I
-            passed my Group 2 exam thanks to Nilaan Academy."
+            "The faculty members are highly knowledgeable and supportive. They
+            provide clear explanations and smart strategies that helped me
+            understand complex topics easily."
             <br />
             <span className="font-semibold mt-4 block text-[#1a1f4d]">
-              – Karthik R
+              – Vidhya
             </span>
           </blockquote>
           <blockquote className="bg-gray-100 p-6 rounded-xl text-lg italic shadow-md text-gray-700">
-            "Special focus on mental ability and Tamil language helped me score
-            well. Highly recommend their TNPSC coaching."
+            "The regular tests, study materials, and personalized guidance
+            played a key role in boosting my confidence."
             <br />
             <span className="font-semibold mt-4 block text-[#1a1f4d]">
-              – Priya M
+              – Rajesh
             </span>
           </blockquote>
         </div>
@@ -587,11 +581,13 @@ export default function App() {
               </p>
               <p className="mb-2">Opp to EB Office, Santhosapuram,</p>
               <p className="mb-4">Sembakkam, Chennai, Tamil Nadu - 600 073</p>
-
               <h4 className="text-xl font-semibold mb-4 mt-6">
                 Contact Information
               </h4>
-              <p className="mb-2 flex items-center">
+              <a
+                href="tel:+916382313042"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+              >
                 <svg
                   className="w-5 h-5 mr-2"
                   fill="currentColor"
@@ -600,8 +596,11 @@ export default function App() {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
                 +91 63823 13042
-              </p>
-              <p className="mb-2 flex items-center">
+              </a>
+              <a
+                href="mailto:info@nilaanacademy.in"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+              >
                 <svg
                   className="w-5 h-5 mr-2"
                   fill="currentColor"
@@ -614,8 +613,13 @@ export default function App() {
                   ></path>
                 </svg>
                 info@nilaanacademy.in
-              </p>
-              <p className="mb-2 flex items-center">
+              </a>
+              <a
+                href="https://www.nilaanacademy.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+              >
                 <svg
                   className="w-5 h-5 mr-2"
                   fill="currentColor"
@@ -628,7 +632,26 @@ export default function App() {
                   ></path>
                 </svg>
                 www.nilaanacademy.in
-              </p>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/GiYJN1uxxehhPAQAA?g_st=aw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Google Maps & Reviews
+              </a>
             </div>
             <div className="bg-white text-gray-800 p-6 rounded-xl shadow-md">
               <h4 className="text-xl font-semibold mb-4 text-[#1a1f4d]">
@@ -712,7 +735,7 @@ export default function App() {
               </a>
             </div>
             <div className="space-y-2">
-              <h5 className="font-semibold">Legal</h5>
+              <h5 className="font-semibold">Connect</h5>
               <a href="#" className="block hover:text-[#ffaa33]">
                 Privacy Policy
               </a>
