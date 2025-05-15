@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import classroomImage from "./assets/na-classroom.jpg";
+import successImage from "./assets/na-success.jpg";
 
 export default function App() {
   // State for scroll-to-top button visibility
@@ -57,7 +59,11 @@ export default function App() {
         <div className="flex items-center">
           <div className="mr-3 hidden md:block">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-              <span className="text-[#1a1f4d] text-2xl font-bold">N</span>
+              <img
+                src={successImage}
+                alt="Classroom"
+                className="rounded-full"
+              />
             </div>
           </div>
           <h1 className="text-2xl font-bold">NILAAN ACADEMY</h1>
@@ -120,8 +126,8 @@ export default function App() {
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
           <img
-            src="https://img.freepik.com/free-photo/students-using-laptop_1098-15552.jpg"
-            alt="Students"
+            src={classroomImage}
+            alt="Classroom"
             className="rounded-xl shadow-lg"
           />
         </div>
@@ -218,10 +224,7 @@ export default function App() {
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">GROUP 1</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹20,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹18,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹20,000</p>
                   </div>
                 </div>
               </div>
@@ -229,21 +232,15 @@ export default function App() {
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">GROUP 2</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹18,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹15,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹18,000</p>
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="border-b pb-4">
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">GROUP 4</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹15,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹12,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹15,000</p>
                   </div>
                 </div>
               </div>
@@ -263,10 +260,7 @@ export default function App() {
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">SI</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹18,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹15,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹18,000</p>
                   </div>
                 </div>
               </div>
@@ -274,10 +268,7 @@ export default function App() {
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">P.C</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹15,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹12,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹15,000</p>
                   </div>
                 </div>
               </div>
@@ -297,10 +288,7 @@ export default function App() {
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">SSC</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹18,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹15,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹18,000</p>
                   </div>
                 </div>
               </div>
@@ -308,20 +296,8 @@ export default function App() {
                 <div className="flex justify-between items-center">
                   <h5 className="font-semibold text-gray-800">RRB</h5>
                   <div className="text-right">
-                    <p className="text-sm line-through text-gray-500">
-                      ₹18,000
-                    </p>
-                    <p className="font-bold text-[#ffaa33]">₹15,000</p>
+                    <p className="font-bold text-[#ffaa33]">₹18,000</p>
                   </div>
-                </div>
-              </div>
-              <div className="mt-8 pt-2">
-                <div className="bg-[#ffaa33] text-[#1a1f4d] p-2 rounded text-center font-semibold">
-                  AKSHAYATRITHI OFFER
-                </div>
-                <div className="bg-[#1a1f4d] text-white text-center p-4 mt-2 rounded">
-                  <p className="font-bold text-xl">ADMISSION OPEN</p>
-                  <p className="text-sm">Valid upto 01.05.2025</p>
                 </div>
               </div>
             </div>
@@ -339,8 +315,8 @@ export default function App() {
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
             <div className="md:w-1/2">
               <img
-                src="https://img.freepik.com/free-photo/group-diverse-students-classroom_53876-46668.jpg"
-                alt="Nilaan Academy Classroom"
+                src={successImage}
+                alt="Success"
                 className="rounded-xl shadow-lg"
               />
             </div>
@@ -375,13 +351,23 @@ export default function App() {
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                Affordable Cost
-              </h4>
-              <p className="text-gray-700">
-                We provide quality coaching classes "Success Made
-                Simple & Affordable."
-              </p>
+              <marquee direction="up" className="max-h-40">
+                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                  Benefits
+                </h4>
+                <p className="text-gray-700">
+                  We provide quality coaching classes "Success Made
+                  Simple & Affordable."
+                </p>
+
+                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d] mt-8">
+                  நன்மைகள்
+                </h4>
+                <p className="text-gray-700">
+                  "வெற்றி எளிமையாகவும் மலிவாகவும்" தரமான பயிற்சி வகுப்புகளை
+                  நாங்கள் வழங்குகிறோம்
+                </p>
+              </marquee>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-md">
@@ -399,16 +385,29 @@ export default function App() {
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                Expert Faculty
-              </h4>
-              <p className="text-gray-700">
-                Our faculty team consists of highly qualified and experienced
-                educators who specialize in TNPSC and other competitive exams.
-                They simplify complex topics, provide exam-focused strategies,
-                and guide every student with dedication and care to ensure
-                success.
-              </p>
+              <marquee direction="up" className="max-h-40">
+                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                  Expert Faculty
+                </h4>
+                <p className="text-gray-700">
+                  Our faculty team consists of highly qualified and experienced
+                  educators who specialize in TNPSC and other competitive exams.
+                  They simplify complex topics, provide exam-focused strategies,
+                  and guide every student with dedication and care to ensure
+                  success.
+                </p>
+
+                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d] mt-8">
+                  அறிஞர் பேராசிரியர்கள்
+                </h4>
+                <p className="text-gray-700">
+                  எங்கள் ஆசிரியர்கள் TNPSC மற்றும் போட்டித் தேர்வுகளில் சிறந்த
+                  அனுபவம் பெற்றவர்கள். கடினமான தலைப்புகளை எளிமையாகக்
+                  கற்றுத்தருவதில் நிபுணத்துவம் பெற்றவர்கள். தேர்வுக்கு தேவையான
+                  திறன்கள் மற்றும் வழிகாட்டல்களை மாணவர்களுக்கு முழுமையாக
+                  வழங்குகிறார்கள்
+                </p>
+              </marquee>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-md">
@@ -422,14 +421,26 @@ export default function App() {
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                 </svg>
               </div>
-              <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                Comprehensive Resources
-              </h4>
-              <p className="text-gray-700">
-                We provide well-structured study materials, updated notes,
-                previous year question papers, and practice tests – everything
-                you need for complete TNPSC exam preparation in one place.
-              </p>
+              <marquee direction="up" className="max-h-40">
+                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                  Comprehensive Resources
+                </h4>
+                <p className="text-gray-700">
+                  We provide well-structured study materials, updated notes,
+                  previous year question papers, and practice tests – everything
+                  you need for complete TNPSC exam preparation in one place.
+                </p>
+
+                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d] mt-8">
+                  முழுமையான படிப்புப் பொருட்கள்
+                </h4>
+                <p className="text-gray-700">
+                  TNPSC தேர்வுக்கான அனைத்து தேவைகளையும் பூர்த்தி செய்யும்
+                  வகையில் எங்கள் படிப்புப் பொருட்கள் திட்டமிடப்பட்டவை – நூல்கள்,
+                  குறிப்பு குறிப்புகள், கடந்த வருட கேள்விகள், பயிற்சி தேர்வுகள்
+                  அனைத்தும் ஒரே இடத்தில்!
+                </p>
+              </marquee>
             </div>
           </div>
 
@@ -495,9 +506,9 @@ export default function App() {
                 "Daily Class handouts",
                 "Special focus on mental ability class and general tamil",
               ].map((item, index) => (
-                <li key={index} className="flex items-start">
+                <li key={index} className="flex items-start gap-2">
                   <svg
-                    className="w-5 h-5 text-[#ffaa33] mr-2 mt-1"
+                    className="w-5 h-5 text-[#ffaa33] mt-1.5 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -507,7 +518,7 @@ export default function App() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  {item}
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
@@ -518,11 +529,11 @@ export default function App() {
                 "Regular mentorship from experts",
                 "Flexible learning options",
                 "Affordable pricing with discounts",
-                "Personalized guidance, expert teaching, and affordable excellence",
+                "Personalized guidance, expert teaching, and affordable excellence",
               ].map((item, index) => (
-                <li key={index} className="flex items-start">
+                <li key={index} className="flex items-start gap-2">
                   <svg
-                    className="w-5 h-5 text-[#ffaa33] mr-2 mt-1"
+                    className="w-5 h-5 text-[#ffaa33] mt-1.5 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -532,7 +543,7 @@ export default function App() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  {item}
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
@@ -575,21 +586,27 @@ export default function App() {
           <h3 className="text-3xl font-bold mb-8 text-center">Contact Us</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-xl font-semibold mb-4">Our Address</h4>
-              <p className="mb-2">
+              <h4 className="text-[20px] font-semibold mb-4">Our Address</h4>
+              <p className="mb-2 text-[17px]">
                 1st Floor no, 2/161, Vengaivasal Main Road,
               </p>
-              <p className="mb-2">Opp to EB Office, Santhosapuram,</p>
-              <p className="mb-4">Sembakkam, Chennai, Tamil Nadu - 600 073</p>
-              <h4 className="text-xl font-semibold mb-4 mt-6">
+              <p className="mb-2 text-[17px]">
+                Opp to EB Office, Santhosapuram,
+              </p>
+              <p className="mb-4 text-[17px]">
+                Sembakkam, Chennai, Tamil Nadu - 600 073
+              </p>
+
+              <h4 className="text-[20px] font-semibold mb-4 mt-6">
                 Contact Information
               </h4>
+
               <a
                 href="tel:+916382313042"
-                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white! text-[17px]"
               >
                 <svg
-                  className="w-5 h-5 mr-2"
+                  className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -597,12 +614,13 @@ export default function App() {
                 </svg>
                 +91 63823 13042
               </a>
+
               <a
-                href="mailto:info@nilaanacademy.in"
-                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+                href="mailto:academynilaan@gmail.com"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white! text-[17px]"
               >
                 <svg
-                  className="w-5 h-5 mr-2"
+                  className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -612,16 +630,17 @@ export default function App() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                info@nilaanacademy.in
+                academynilaan@gmail.com
               </a>
+
               <a
                 href="https://www.nilaanacademy.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white! text-[17px]"
               >
                 <svg
-                  className="w-5 h-5 mr-2"
+                  className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -633,14 +652,15 @@ export default function App() {
                 </svg>
                 www.nilaanacademy.in
               </a>
+
               <a
                 href="https://maps.app.goo.gl/GiYJN1uxxehhPAQAA?g_st=aw"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white!"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white! text-[17px]"
               >
                 <svg
-                  className="w-5 h-5 mr-2"
+                  className="w-4 h-4 mr-2"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -651,6 +671,24 @@ export default function App() {
                   />
                 </svg>
                 Google Maps & Reviews
+              </a>
+
+              <a
+                href="https://www.instagram.com/nilaan_academy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 flex items-center hover:text-[#535bf2]! transition text-white! text-[17px]"
+              >
+                <svg
+                  className="w-4 h-4 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <g transform="translate(2,2)">
+                    <path d="M8 0C5.75 0 5.5.01 4.625.048 3.75.088 3.13.23 2.625.437c-.527.215-.975.5-1.42.945C.76 1.827.475 2.275.26 2.8.052 3.3-.088 3.92-.05 4.8.01 5.67 0 5.94 0 8c0 2.06.01 2.33.05 3.2.038.88.18 1.5.387 2 .215.527.5.975.945 1.42.445.445.893.73 1.42.945.5.207 1.12.349 2 .387C5.67 15.99 5.94 16 8 16s2.33-.01 3.2-.05c.88-.038 1.5-.18 2-.387.527-.215.975-.5 1.42-.945.445-.445.73-.893.945-1.42.207-.5.349-1.12.387-2 .04-.87.05-1.14.05-3.2 0-2.06-.01-2.33-.05-3.2-.038-.88-.18-1.5-.387-2-.215-.527-.5-.975-.945-1.42-.445-.445-.893-.73-1.42-.945-.5-.207-1.12-.349-2-.387C10.33.01 10.06 0 8 0zm0 1.44c2.015 0 2.26.008 3.057.045.737.035 1.138.157 1.403.26.353.136.605.3.87.565.265.265.43.517.565.87.103.265.225.666.26 1.403.037.797.045 1.042.045 3.057s-.008 2.26-.045 3.057c-.035.737-.157 1.138-.26 1.403a2.32 2.32 0 0 1-.565.87 2.32 2.32 0 0 1-.87.565c-.265.103-.666.225-1.403.26-.797.037-1.042.045-3.057.045s-2.26-.008-3.057-.045c-.737-.035-1.138-.157-1.403-.26a2.32 2.32 0 0 1-.87-.565 2.32 2.32 0 0 1-.565-.87c-.103-.265-.225-.666-.26-1.403C1.448 10.26 1.44 10.015 1.44 8s.008-2.26.045-3.057c.035-.737.157-1.138.26-1.403.136-.353.3-.605.565-.87.265-.265.517-.43.87-.565.265-.103.666-.225 1.403-.26C5.74 1.448 5.985 1.44 8 1.44zM8 3.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zm0 6.76a2.66 2.66 0 1 1 0-5.32 2.66 2.66 0 0 1 0 5.32zm3.82-6.93a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z" />
+                  </g>
+                </svg>
+                nilaan_academy
               </a>
             </div>
             <div className="bg-white text-gray-800 p-6 rounded-xl shadow-md">
@@ -731,7 +769,7 @@ export default function App() {
                 TNUSRB
               </a>
               <a href="#" className="block hover:text-[#ffaa33]">
-                SSC
+                SSC / RRB
               </a>
             </div>
             <div className="space-y-2">

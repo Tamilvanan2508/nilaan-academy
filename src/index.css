@@ -68,3 +68,43 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.language-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 60px;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  animation: slideText 10s linear infinite;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.lang-en {
+  animation-delay: 0s;
+}
+
+.lang-ta {
+  animation-delay: 5s;
+}
+
+.language-wrapper-title {
+  height: 40px;
+}
+
+.language-wrapper-desc {
+  height: 80px;
+}
