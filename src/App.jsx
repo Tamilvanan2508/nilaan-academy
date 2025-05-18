@@ -351,23 +351,26 @@ export default function App() {
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
                 </svg>
               </div>
-              <marquee direction="up" className="max-h-40">
-                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                  Benefits
-                </h4>
-                <p className="text-gray-700">
-                  We provide quality coaching classes "Success Made
-                  Simple & Affordable."
-                </p>
-
-                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d] mt-8">
-                  நன்மைகள்
-                </h4>
-                <p className="text-gray-700">
-                  "வெற்றி எளிமையாகவும் மலிவாகவும்" தரமான பயிற்சி வகுப்புகளை
-                  நாங்கள் வழங்குகிறோம்
-                </p>
-              </marquee>
+              <div className="relative overflow-hidden min-h-[260px]">
+                <div className="content-a absolute inset-0 animate-toggle-a overflow-auto">
+                  <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                    Benefits
+                  </h4>
+                  <p className="text-gray-700 ">
+                    We provide quality coaching classes "Success Made Simple &
+                    Affordable."
+                  </p>
+                </div>
+                <div className="content-b absolute inset-0 animate-toggle-b overflow-auto">
+                  <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                    நன்மைகள்
+                  </h4>
+                  <p className="text-gray-700 ">
+                    "வெற்றி எளிமையாகவும் மலிவாகவும்" தரமான பயிற்சி வகுப்புகளை
+                    நாங்கள் வழங்குகிறோம்
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-md">
@@ -385,29 +388,32 @@ export default function App() {
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
                 </svg>
               </div>
-              <marquee direction="up" className="max-h-40">
-                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                  Expert Faculty
-                </h4>
-                <p className="text-gray-700">
-                  Our faculty team consists of highly qualified and experienced
-                  educators who specialize in TNPSC and other competitive exams.
-                  They simplify complex topics, provide exam-focused strategies,
-                  and guide every student with dedication and care to ensure
-                  success.
-                </p>
-
-                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d] mt-8">
-                  அறிஞர் பேராசிரியர்கள்
-                </h4>
-                <p className="text-gray-700">
-                  எங்கள் ஆசிரியர்கள் TNPSC மற்றும் போட்டித் தேர்வுகளில் சிறந்த
-                  அனுபவம் பெற்றவர்கள். கடினமான தலைப்புகளை எளிமையாகக்
-                  கற்றுத்தருவதில் நிபுணத்துவம் பெற்றவர்கள். தேர்வுக்கு தேவையான
-                  திறன்கள் மற்றும் வழிகாட்டல்களை மாணவர்களுக்கு முழுமையாக
-                  வழங்குகிறார்கள்
-                </p>
-              </marquee>
+              <div className="relative overflow-hidden min-h-[260px]">
+                <div className="content-a absolute inset-0 animate-toggle-a overflow-auto">
+                  <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                    Expert Faculty
+                  </h4>
+                  <p className="text-gray-700 ">
+                    Our faculty team consists of highly qualified and
+                    experienced educators who specialize in TNPSC and other
+                    competitive exams. They simplify complex topics, provide
+                    exam-focused strategies, and guide every student with
+                    dedication and care to ensure success.
+                  </p>
+                </div>
+                <div className="content-b absolute inset-0 animate-toggle-b overflow-auto">
+                  <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                    அறிஞர் பேராசிரியர்கள்
+                  </h4>
+                  <p className="text-gray-700 ">
+                    எங்கள் ஆசிரியர்கள் TNPSC மற்றும் போட்டித் தேர்வுகளில் சிறந்த
+                    அனுபவம் பெற்றவர்கள். கடினமான தலைப்புகளை எளிமையாகக்
+                    கற்றுத்தருவதில் நிபுணத்துவம் பெற்றவர்கள். தேர்வுக்கு தேவையான
+                    திறன்கள் மற்றும் வழிகாட்டல்களை மாணவர்களுக்கு முழுமையாக
+                    வழங்குகிறார்கள்
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-xl shadow-md">
@@ -421,26 +427,30 @@ export default function App() {
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                 </svg>
               </div>
-              <marquee direction="up" className="max-h-40">
-                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
-                  Comprehensive Resources
-                </h4>
-                <p className="text-gray-700">
-                  We provide well-structured study materials, updated notes,
-                  previous year question papers, and practice tests – everything
-                  you need for complete TNPSC exam preparation in one place.
-                </p>
-
-                <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d] mt-8">
-                  முழுமையான படிப்புப் பொருட்கள்
-                </h4>
-                <p className="text-gray-700">
-                  TNPSC தேர்வுக்கான அனைத்து தேவைகளையும் பூர்த்தி செய்யும்
-                  வகையில் எங்கள் படிப்புப் பொருட்கள் திட்டமிடப்பட்டவை – நூல்கள்,
-                  குறிப்பு குறிப்புகள், கடந்த வருட கேள்விகள், பயிற்சி தேர்வுகள்
-                  அனைத்தும் ஒரே இடத்தில்!
-                </p>
-              </marquee>
+              <div className="relative overflow-hidden min-h-[260px]">
+                <div className="content-a absolute inset-0 animate-toggle-a overflow-auto">
+                  <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                    Comprehensive Resources
+                  </h4>
+                  <p className="text-gray-700 ">
+                    We provide well-structured study materials, updated notes,
+                    previous year question papers, and practice tests –
+                    everything you need for complete TNPSC exam preparation in
+                    one place.
+                  </p>
+                </div>
+                <div className="content-b absolute inset-0 animate-toggle-b overflow-auto">
+                  <h4 className="text-xl font-semibold mb-2 text-[#1a1f4d]">
+                    முழுமையான படிப்புப் பொருட்கள்
+                  </h4>
+                  <p className="text-gray-700 ">
+                    TNPSC தேர்வுக்கான அனைத்து தேவைகளையும் பூர்த்தி செய்யும்
+                    வகையில் எங்கள் படிப்புப் பொருட்கள் திட்டமிடப்பட்டவை –
+                    நூல்கள், குறிப்பு குறிப்புகள், கடந்த வருட கேள்விகள், பயிற்சி
+                    தேர்வுகள் அனைத்தும் ஒரே இடத்தில்!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
